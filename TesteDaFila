@@ -1,0 +1,28 @@
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class TesteDaFila {
+
+	public static void main(String[] args) {
+		
+		Fila fila = new Fila();
+		
+		fila.enqueue("Mauricio");
+		fila.enqueue("Guilherme");
+		
+		System.out.println(fila);
+		
+		String x1 = fila.dequeue();
+		
+		System.out.println(x1);
+		System.out.println(fila);
+		
+		Queue<String> filaDoJava = new LinkedList<String>();
+		
+		filaDoJava.add("Maurício");
+		String x2 = filaDoJava.poll();
+		
+		System.out.println(x2);
+	}
+
+}
